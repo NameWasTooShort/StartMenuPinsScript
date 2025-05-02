@@ -10,3 +10,7 @@ How to run:
 
 How it works:
 Each user in Windows 11 gets its start menu from a file called Start2.bin. By taking a preexisting start2.bin file and overwriting the old one, we can apply a template.
+
+-----
+
+Currently the script only applies the start2.bin file to the default user so start menu changes will only apply to newly created users. Changes do not apply to users already created.
