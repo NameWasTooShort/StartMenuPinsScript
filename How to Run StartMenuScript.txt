@@ -1,6 +1,0 @@
-1. Run PowerShell as Administrator
-2. Set-ExecutionPolicy Unrestricted -Scope Process
-	- Yes to All
-3. Navigate to script location in PowerShell
-	- D:\Start Menu Pins Script
-4. .\StartMenuScript.ps1
