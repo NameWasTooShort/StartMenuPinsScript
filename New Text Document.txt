@@ -1,0 +1,13 @@
+# Path of the start menu template that will be applied.
+$startMenuTemplate = "$PSScriptRoot/StartMenuTemplate/start2.bin"
+
+# Path where the default start menu is saved
+$defaultProfile = "C:\Users\Default\AppData\Local\Packages\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\LocalState"
+
+# Create folder if it doesn't exist
+if(-not(Test-Path $defaultProfile)) {
+   new-item $defaultProfile -ItemType Directory -Force
+}
+
+# Copy file
+Copy-Item -Path $startmenuTemplate -Destination $defaultProfile -Force
